@@ -2,34 +2,34 @@
 name: Build and deploy my app
 # Définition du déclencheur
 on:
-push:
-branches: -main # Déclenchement du worflow lors d'un push sur la branche main
+  push:
+    branches:
+      - main # Déclenchement du worflow lors d'un push sur la branche main
 # Définition des jobs
 jobs:
-build-and-deploy:
-runs-on: ubuntu-latest # Sélection d'une machine virtuelle sur laquelle notre workflow va être exécuté
-steps: 
-# Récupérer notre code
-- name: Checkout code
-uses: actions/checkout@v4
-# Version sur la machine
--name: Setup Node.js
-uses: actions/setup-node@v4
-with: 
-node-version: 20
-# Ajouter les dépendances
--name: Install dependencies
-run: npm install
-# builder
--name: Build Angular app
-run: npm run build
-# Déployer
--name: Deploy app via SSH
-uses: appleboy/scp-action@v0.1.7
-with:
-host: ${{ secrets.HOST }}
-username: ${{ secrets.USERNAME }}
-key: ${{ secrets.SSH_PRIVATE_KEY }}
-source: "dist/project/*"
-target: "~/public_html"
-
+  build-and-deploy:
+    runs-on: ubuntu-latest # Sélection d'une machine virtuelle sur laquelle notre workflow va être exécuté
+    steps:
+      # Récupérer notre code
+      - name: Checkout code
+        uses: actions/checkout@v4
+      # Version sur la machine
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      # Ajouter les dépendances
+      - name: Install dependencies
+        run: npm install
+      # builder
+      - name: Build Angular app
+        run: npm run build
+      # Déployer
+      - name: Deploy app via SSH
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "dist/project/*"
+          target: "~/public_html"
