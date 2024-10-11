@@ -29,6 +29,36 @@ jobs:
     needs: tests
     runs-on: ubuntu-latest # Sélection d'une machine virtuelle sur laquelle notre workflow va être exécuté
     steps:
+      # Get the public IP of the runner
+      - name: Public IP
+        id: ip
+        uses: haythem/public-ip@v1.3
+
+      # Whitelist the public IP of the runner on the remote server by adding it to the SSH whitelist and wait 65 seconds for the IP to be whitelisted
+      # URL_ENCODED_PASSWORD with https://www.urlencoder.org/
+      - name: Whitelist IP on hosting & delete github old ones (o2switch)
+        shell: bash
+        run: |
+          ENDPOINT='frontend/o2switch/o2switch-ssh-whitelist/index.live.php'
+
+          echo "Get actual whitelisted IPs..."
+          UNIQUE_IPS=$(curl -sX GET "https://${{ secrets.USERNAME }}:${{ secrets.URL_ENCODED_PASSWORD }}@${{ secrets.HOST }}:2083/$ENDPOINT?r=list" | jq -r '.data.list[] | .address' | sort -u)
+          for address in $UNIQUE_IPS; do
+            if [[ $address == "${{ secrets.IP_TO_KEEP }}" ]]; then
+                echo "Keep this IP, go to the next..."
+                continue
+            fi
+            echo "Delete this github IP: $address (in & out)"
+            curl -sX GET "https://${{ secrets.USERNAME }}:${{ secrets.URL_ENCODED_PASSWORD }}@${{ secrets.HOST }}:2083/$ENDPOINT?r=remove&address=$address&direction=in&port=22" | jq
+            sleep 3
+            curl -sX GET "https://${{ secrets.USERNAME }}:${{ secrets.URL_ENCODED_PASSWORD }}@${{ secrets.HOST }}:2083/$ENDPOINT?r=remove&address=$address&direction=out&port=22" | jq
+            sleep 3
+          done
+          echo "All non-whitelisted IPs deleted!"
+
+          echo "Attempt to whitelist IP..."
+          curl -sX POST -d 'whitelist[address]=${{ steps.ip.outputs.ipv4 }}' -d 'whitelist[port]=22' "https://${{ secrets.USERNAME }}:${{ secrets.URL_ENCODED_PASSWORD }}@${{ secrets.HOST }}:2083/$ENDPOINT?r=add" | jq
+
       # Récupérer notre code
       - name: Checkout code
         uses: actions/checkout@v4
@@ -52,3 +82,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "dist/project/*"
           target: "~/public_html"
+          rm: true # permet de supprimer les anciens fichiers
+          strip_components: 2 # permet de ne pas copier l'arborescence de fichier (ici /dist/demo-devops/browser devient /)
