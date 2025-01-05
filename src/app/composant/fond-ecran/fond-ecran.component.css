@@ -1,3 +1,7 @@
-img {
-  margin: 0px;
+.background {
+  background-image: url("https://images.wakelet.com/resize?id=fbtqDYpyhLuEwjxzEIOru&h=876&w=1891&q=85");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* ou la hauteur souhaitée */
+  position: relative;
 }
