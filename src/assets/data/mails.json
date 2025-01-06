@@ -1,0 +1,40 @@
+{
+  "mails": [
+    {
+      "id": 1,
+      "expediteur_id": 1,
+      "date": "2025-01-04T09:15:00",
+      "objet": "Demande d'aide urgente - Disparition",
+      "contenu": "Bonjour Détective,\n\nJe vous contacte car je suis très inquiet. Ma femme, Mélodie, a disparu depuis 48 heures. Elle n'est pas rentrée après son dernier cours de piano mardi soir.\n\nJ'ai déjà contacté la police, mais j'ai besoin de votre expertise. Pouvez-vous m'aider à la retrouver ?\n\nBien cordialement,\nJustin Legato",
+      "lu": false,
+      "important": true
+    },
+    {
+      "id": 2,
+      "expediteur_id": 13,
+      "date": "2025-01-04T10:30:00",
+      "objet": "Rapport préliminaire - Affaire Legato",
+      "contenu": "Cher collègue,\n\nSuite à la déclaration de disparition de Mme Legato, voici les premiers éléments de l'enquête que nous avons rassemblés...\n\nCordialement,\nSherlock Lecoq\nBrigade criminelle",
+      "lu": false,
+      "important": true
+    },
+    {
+      "id": 3,
+      "expediteur_id": 5,
+      "date": "2025-01-03T16:45:00",
+      "objet": "Information importante",
+      "contenu": "Bonjour,\n\nJe suis Amandine, une amie proche de Mélodie. J'ai peut-être des informations qui pourraient vous intéresser...\n\nCordialement,\nAmandine Patissier",
+      "lu": false,
+      "important": false
+    },
+    {
+      "id": 4,
+      "expediteur_id": 22,
+      "date": "2025-01-02T14:20:00",
+      "objet": "Interview pour le journal local",
+      "contenu": "Bonjour,\n\nEn tant que journaliste local, je souhaiterais vous interviewer sur les récentes affaires que vous avez résolues...\n\nBien à vous,\nRoman Desmots",
+      "lu": true,
+      "important": false
+    }
+  ]
+}

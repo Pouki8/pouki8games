@@ -1,0 +1,355 @@
+{
+  "personnages": [
+    {
+      "id": 1,
+      "nom": "Legato",
+      "prenom": "Justin",
+      "dateNaissance": "1990-03-15",
+      "age": 34,
+      "adresse": {
+        "numero": "42",
+        "rue": "rue des Musiciens",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "mari_inquiet"
+    },
+    {
+      "id": 2,
+      "nom": "Legato",
+      "prenom": "Mélodie",
+      "dateNaissance": "1991-07-22",
+      "age": 33,
+      "adresse": {
+        "numero": "42",
+        "rue": "rue des Musiciens",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "femme_disparue"
+    },
+    {
+      "id": 3,
+      "nom": "Legato",
+      "prenom": "Symphonie",
+      "dateNaissance": "1960-12-01",
+      "age": 64,
+      "adresse": {
+        "numero": "15",
+        "rue": "avenue des Compositeurs",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "mere_justin"
+    },
+    {
+      "id": 4,
+      "nom": "Deschamps",
+      "prenom": "Rose",
+      "dateNaissance": "1962-05-18",
+      "age": 62,
+      "adresse": {
+        "numero": "7",
+        "rue": "rue des Jardins",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "mere_melodie"
+    },
+    {
+      "id": 5,
+      "nom": "Patissier",
+      "prenom": "Amandine",
+      "dateNaissance": "1989-04-12",
+      "age": 35,
+      "adresse": {
+        "numero": "3",
+        "rue": "rue des Gourmands",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "amie_melodie"
+    },
+    {
+      "id": 6,
+      "nom": "Boulanger",
+      "prenom": "Cerise",
+      "dateNaissance": "1990-08-25",
+      "age": 34,
+      "adresse": {
+        "numero": "18",
+        "rue": "rue des Gourmands",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "collegue_melodie"
+    },
+    {
+      "id": 7,
+      "nom": "Dupain",
+      "prenom": "Brioche",
+      "dateNaissance": "1988-11-30",
+      "age": 36,
+      "adresse": {
+        "numero": "24",
+        "rue": "avenue des Délices",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "galeriste"
+    },
+    {
+      "id": 8,
+      "nom": "Lajoie",
+      "prenom": "Félicien",
+      "dateNaissance": "1992-02-14",
+      "age": 32,
+      "adresse": {
+        "numero": "13",
+        "rue": "rue du Bonheur",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "suspect"
+    },
+    {
+      "id": 9,
+      "nom": "Delajungle",
+      "prenom": "Léopold",
+      "dateNaissance": "1987-09-20",
+      "age": 37,
+      "adresse": {
+        "numero": "5",
+        "rue": "rue des Aventuriers",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "temoin"
+    },
+    {
+      "id": 10,
+      "nom": "Duchamp",
+      "prenom": "Marcel",
+      "dateNaissance": "1989-06-15",
+      "age": 35,
+      "adresse": {
+        "numero": "27",
+        "rue": "rue des Artistes",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "suspect"
+    },
+    {
+      "id": 11,
+      "nom": "Lebeau",
+      "prenom": "Narcisse",
+      "dateNaissance": "1991-01-01",
+      "age": 33,
+      "adresse": {
+        "numero": "9",
+        "rue": "avenue des Miroirs",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "voisin"
+    },
+    {
+      "id": 12,
+      "nom": "Sainement",
+      "prenom": "Prudence",
+      "dateNaissance": "1993-03-30",
+      "age": 31,
+      "adresse": {
+        "numero": "11",
+        "rue": "rue de la Sagesse",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "temoin"
+    },
+    {
+      "id": 13,
+      "nom": "Lecoq",
+      "prenom": "Sherlock",
+      "dateNaissance": "1988-12-25",
+      "age": 36,
+      "adresse": {
+        "numero": "221",
+        "rue": "rue des Enquêteurs",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "policier"
+    },
+    {
+      "id": 14,
+      "nom": "Mystere",
+      "prenom": "Hercule",
+      "dateNaissance": "1985-07-07",
+      "age": 39,
+      "adresse": {
+        "numero": "1",
+        "rue": "impasse des Secrets",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "suspect"
+    },
+    {
+      "id": 15,
+      "nom": "Dubois",
+      "prenom": "Sylvestre",
+      "dateNaissance": "1990-05-21",
+      "age": 34,
+      "adresse": {
+        "numero": "17",
+        "rue": "rue des Forêts",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "temoin"
+    },
+    {
+      "id": 16,
+      "nom": "Labiblio",
+      "prenom": "Page",
+      "dateNaissance": "1992-04-17",
+      "age": 32,
+      "adresse": {
+        "numero": "8",
+        "rue": "rue des Livres",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "bibliothecaire"
+    },
+    {
+      "id": 17,
+      "nom": "Duchien",
+      "prenom": "Rex",
+      "dateNaissance": "1989-08-08",
+      "age": 35,
+      "adresse": {
+        "numero": "4",
+        "rue": "rue des Animaux",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "veterinaire"
+    },
+    {
+      "id": 18,
+      "nom": "Leclavier",
+      "prenom": "Harmonie",
+      "dateNaissance": "1990-11-03",
+      "age": 34,
+      "adresse": {
+        "numero": "12",
+        "rue": "rue des Musiciens",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "prof_piano"
+    },
+    {
+      "id": 19,
+      "nom": "Poivre",
+      "prenom": "Sel",
+      "dateNaissance": "1988-02-29",
+      "age": 36,
+      "adresse": {
+        "numero": "2",
+        "rue": "rue des Épices",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "restaurateur"
+    },
+    {
+      "id": 20,
+      "nom": "Dujardin",
+      "prenom": "Flora",
+      "dateNaissance": "1991-05-01",
+      "age": 33,
+      "adresse": {
+        "numero": "6",
+        "rue": "rue des Fleurs",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "fleuriste"
+    },
+    {
+      "id": 21,
+      "nom": "Lenoir",
+      "prenom": "Blanc",
+      "dateNaissance": "1987-12-12",
+      "age": 37,
+      "adresse": {
+        "numero": "10",
+        "rue": "rue des Couleurs",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "photographe"
+    },
+    {
+      "id": 22,
+      "nom": "Desmots",
+      "prenom": "Roman",
+      "dateNaissance": "1993-09-15",
+      "age": 31,
+      "adresse": {
+        "numero": "14",
+        "rue": "rue des Écrivains",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "journaliste"
+    },
+    {
+      "id": 23,
+      "nom": "Laplage",
+      "prenom": "Marine",
+      "dateNaissance": "1986-07-14",
+      "age": 38,
+      "adresse": {
+        "numero": "20",
+        "rue": "rue des Marins",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "prof_natation"
+    },
+    {
+      "id": 24,
+      "nom": "Delatour",
+      "prenom": "Quentin",
+      "dateNaissance": "1992-10-31",
+      "age": 32,
+      "adresse": {
+        "numero": "16",
+        "rue": "rue des Horlogers",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "horloger"
+    },
+    {
+      "id": 25,
+      "nom": "Duchaussettes",
+      "prenom": "Basket",
+      "dateNaissance": "1988-06-06",
+      "age": 36,
+      "adresse": {
+        "numero": "22",
+        "rue": "rue des Sports",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "vendeur_sport"
+    },
+    {
+      "id": 26,
+      "nom": "Delabanque",
+      "prenom": "Fortuné",
+      "dateNaissance": "1990-03-21",
+      "age": 34,
+      "adresse": {
+        "numero": "1",
+        "rue": "rue des Coffres",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "banquier"
+    },
+    {
+      "id": 27,
+      "nom": "Lamusiqueadeux",
+      "prenom": "Emma",
+      "dateNaissance": "1992-08-12",
+      "age": 31,
+      "adresse": {
+        "numero": "28",
+        "rue": "rue des Élèves",
+        "ville": "Villeneuve-sur-Lot"
+      },
+      "role": "eleve_piano"
+    }
+  ]
+}
